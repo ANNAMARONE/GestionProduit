@@ -1,0 +1,10 @@
+<div class="container" id="listeProduit">
+    
+<div class="produit" *ngFor="let produit of produits;  trackBy: trackById">
+<h3>{{produit.nom | uppercase}}</h3>
+<img src="{{produit.image}}" alt="">
+<p>{{produit.prix | currency:"EUR" : "symbol":"1.2-2"}}</p>
+<button (click)="detailproduit(produit)"><details></details></button>
+</div>
+
+</div>

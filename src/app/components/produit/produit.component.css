@@ -1,0 +1,30 @@
+.produit{
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-sizing: 0 2px 4px rgba(0,0,0,0.2);
+    
+}
+#listeProduit{
+    display: flex;
+    flex-wrap: wrap;
+}
+h3{
+   margin-top: 0; 
+   
+}
+button{
+ background-color: blue;  
+ color: white; 
+ border: none;
+ padding: 10px 15px;
+ border-radius: 4px;
+ cursor: pointer;
+}
+img{
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+
+}
