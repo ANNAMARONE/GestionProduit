@@ -1,0 +1,21 @@
+<div class="container" id="listeProduit">
+    
+<div class="produit" *ngFor="let produit of produits;  trackBy: trackById">
+    <div class="cardcontainer">
+        <div class="photo">
+            <img src="{{produit.image}}">
+            <div class="photos">Photos</div>
+        </div>
+        <div class="content">
+            <p class="txt4">{{produit.prix | currency:"EUR" : "symbol":"1.2-2"}}</p>
+            <p class="txt5">{{produit.nom | uppercase}}</p>
+            <p class="txt2">{{produit.description}}</p>
+        </div>
+        <div class="footer">
+            <button (click)="detailproduit(produit)" popovertarget="modal">details</button>
+            <p class="txt3"><span class="comments"><i class="fa-regular fa-heart fa-2xl" style="color:#E74C3C;"></i></span></p>
+            
+        </div>
+    </div>
+
+</div>
