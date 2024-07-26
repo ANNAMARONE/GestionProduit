@@ -26,7 +26,7 @@ export class ProduitComponent {
       description: 'Un assortiment de fruits frais locaux, comprenant des mangues, des bananes, et des ananas.',
       prix: 10.00,
       quantite: 15,
-      image: 'https://www.lacueillettedeshalles.fr/pub/produits/paniers/.fruits_m.jpg'
+      image: 'https://www.lacueillettedeshalles.fr/pub/produits/paniers/.fruits_m.jpg',
     },
     {
       id: 2,
@@ -51,6 +51,14 @@ export class ProduitComponent {
       prix: 30.00,
       quantite: 12,
       image: 'https://th.bing.com/th/id/R.070b86407e36ff9b9c2f74e10e52014f?rik=v1wP06VTkvv5hw&pid=ImgRaw&r=0'
+    },
+    {
+      id: 5,
+      nom: 'Artisanat en Bois',
+      description: 'Objets en bois sculptés à la main, allant des décorations murales aux petites sculptures.',
+      prix: 25.00,
+      quantite: 10,
+      image: 'https://2.bp.blogspot.com/-w5H5DWvvg64/TnC5OYQ6OII/AAAAAAAAAEc/MZtsOT12Bng/s1600/HPIM1777.JPG'
     },
     {
       id: 5,

@@ -1,12 +1,17 @@
 <app-produit></app-produit>
-
-
-
- <h1>détail</h1>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 @for(item of cartService.getItems();track item.id){
-    <div class="cart-item">
-    <h3>{{item.nom}}</h3>
-    <p>{{item.prix}}</p>
-    <button (click)="deleteform(item)"></button>
-    </div>
+    <div class="demo-wrapper">
+          <dialog popover id="modal">
+            <p>{{item.description}}</p>
+            <p>{{item.prix}}</p>
+            <p>{{item.quantite}}</p>
+            <footer>
+                <button class="delete" (click)="deleteform(item)"><i class="fa-solid fa-trash fa-2xl" style="color: #E74C3C;"></i></button>
+              <button class="close" type="button" popovertarget="modal" popovertargetaction="hide">Close</button>
+            </footer>
+          </dialog>
+       
+      </div>
+    
 }
